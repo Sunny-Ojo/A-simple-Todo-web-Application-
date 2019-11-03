@@ -1,0 +1,42 @@
+body {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: white !important;
+}
+i {
+  margin-right: 4px !important;
+}
+img {
+  height: 300px !important;
+  width: 100% !important;
+}
+.badge-secondary {
+  margin-top: 50px;
+  padding: 3px;
+}
+.footer ul {
+  list-style: none;
+  margin: 0;
+}
+
+.footer ul li {
+  display: inline;
+  padding: 7px;
+}
+.footer ul li i:hover {
+  color: black;
+  background: white;
+}
+.footer {
+  background: lightgrey;
+  text-align: center;
+  color: black;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+.fab {
+  color: rgb(100, 40, 241);
+}

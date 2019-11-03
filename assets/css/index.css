@@ -1,0 +1,29 @@
+body {
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+nav a {
+  color: white !important;
+}
+nav a img {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 20px !important;
+}
+.main {
+  margin-top: 50px !important;
+  background: lightgray;
+}
+input {
+  box-shadow: none !important;
+}
+.sub {
+  position: relative !important;
+  top: 50% !important;
+}
+a i {
+  padding: 5px !important;
+}
+table {
+  padding: 10px !important;
+}
