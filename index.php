@@ -8,7 +8,7 @@ if (isset($_POST["submit"])) {
         $task = $_POST["todo"];
         $task = filter_var($task, FILTER_SANITIZE_STRING);
         $task = trim($task);
-        $stmt = $conn->prepare("INSERT INTO `tasks` (`tasks`) value(?)");
+        $stmt = $conn->prepare("INSERT INTO `tasks` (`todos`) value(?)");
         $stmt->execute([$task]);
         if ($stmt) {
             $success = "<div class='badge-success text-capitalize text-center'>successfully created</div>";
@@ -61,12 +61,12 @@ if (isset($success)) {echo $success;}
             <th>ACTION</th>
           </tr>
           <?php
-$dis = $conn->query("SELECT * FROM `tasks` ORDER BY `tasks` DESC");
+$dis = $conn->query("SELECT * FROM `tasks`");
 foreach ($dis as $me) {
     echo "<tr>
           <td>" . $me['id'] . "</td>
-          <td>" . $me['tasks'] . "</td>
-          <td>" . $me['Created_on'] . "</td>
+          <td>" . $me['todos'] . "</td>
+          <td>" . $me['created_on'] . "</td>
           <td><a href='remove.php?id=" . $me['id'] . "'><i title='Delete this task' class='fa fa-trash'></i></a>
           <a href='edit.php?id=" . $me['id'] . "'><i title='Edit this task' class='fa fa-pen-alt'></i></a></td>
 
