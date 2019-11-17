@@ -5,7 +5,6 @@ $error = "";
 if (isset($_POST["cancel"])) {
     header("location:index.php");
 }
-
 if (isset($_POST["submit"])) {
     $task = $_POST["todo"];
     $id = $_POST['task_id'];
